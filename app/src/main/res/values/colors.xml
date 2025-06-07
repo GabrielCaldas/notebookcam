@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorDetailDark">#cd2129</color>
+    <color name="colorPrimary">#ffc90e</color>
+    <color name="colorPrimaryDark">#e2b106</color>
+    <color name="colorAccent">#8c8c8c</color>
+    <color name="white">#fff</color>
+    <color name="selected">#17d630</color>
+
+    <color name="folderColor1">#ffc90e</color>
+    <color name="folderColor2">#0ea7ff</color>
+    <color name="folderColor3">#71b343</color>
+    <color name="folderColor4">#ed9b60</color>
+    <color name="folderColor5">#d553d7</color>
+    <color name="folderColor6">#ed4346</color>
+
+
+    <color name="white_translucent">#AAFFFFFF</color>
+    <color name="black_translucent">#B0000000</color>
+    <color name="border">@color/white_translucent</color>
+    <color name="guideline">@color/white_translucent</color>
+    <color name="corner">@android:color/white</color>
+    <color name="surrounding_area">@color/black_translucent</color>
+</resources>

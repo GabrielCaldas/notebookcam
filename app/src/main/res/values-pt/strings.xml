@@ -1,0 +1,102 @@
+<resources>
+
+    //General
+    <string name="app_name">NoteBook Cam</string>
+    <string name="Cancel">Cancelar</string>
+    <string name="developed_by">Desenvolvido por Infinity Co.</string>
+    <string name="Edit">Editar</string>
+    <string name="No">Não</string>
+    <string name="Create">Criar</string>
+    <string name="Ok">Ok</string>
+    <string name="Delete">Deletar</string>
+    <string name="DeleteADTittle">Tem certeza?</string>
+    <string name="WelcomeTittle">Bem vindo!</string>
+    <string name="WelcomeMensage">\n Bem vindo ao NotvookCam. \n \n Esta versão vem com novo layout chapado e agora você pode editar uma foto logo após tirar uma foto.</string>
+    <string name="WelcomeTip"> Dica! Para vizualizar a foto em alta qualidade, basta abri-la em seu comoputador.</string>
+    <string name="Loading">Carregando.</string>
+    <string name="Saving">Salvando a foto. Por favor aguarde</string>
+    <string name="Youtube">https://youtu.be/bRi1F-ROMdA</string>
+
+    //Menu
+    <string name="Settings">Configuraçõe</string>
+    <string name="Tutorial">Tutorial</string>
+    <string name="Descovery">Descubra</string>
+    <string name="Menu">Menu</string>
+    <string name="ReloadUIMensage">Aplicando mudanças.</string>
+
+    //Option
+    <string name="Font">Estilo da fonte</string>
+    <string name="AppColor">Cor do app</string>
+
+    //Folders
+    <string name="NoFoldersMensage">Você não tem nehuma pasta. Crie uma nova.</string>
+    <string name="NewFolderCreated">Nova pasta criada.</string>
+    <string name="NewFolderFail">Notebook Cam não pode criar essa pasta</string>
+    <string name="FolderAllredyExist">Escolha outro nome para sua pasta</string>
+    <string name="NewFolderAlertDialog">Nova pasta</string>
+    <string name="EditFolderAlertDialog">Editar pasta</string>
+    <string name="NewFolderAlertDialogHint">Nome da pasta</string>
+    <string name="NewFolderSelectColor">Escolha uma cor.</string>
+    <string name="DeleteFolderADMensage">Você realmente deseja excluir esta pasta e todas as fotos que estão armazenadas nela?</string>
+    <string name="DeleteFolder">Pasta deletada</string>
+    <string name="DeleteFolderFail">Essa pasta não pode ser deletada.</string>
+
+    //Subject
+    <string name="NoSubjectsMensage">Você não possui nenhum assunto. Cadastre um novo.</string>
+    <string name="NewSubjectCreated">Agora você tem um novo assunto.</string>
+    <string name="NewSubjectFail">Notebook Cam não pode criar esse assunto.</string>
+    <string name="SubjectAllredyExist">Escolha outro nome para seu assunto.</string>
+    <string name="NewSubjectAlertDialog">Novo assunto</string>
+    <string name="NewSubjectAlertDialogHint">Nome do assunto</string>
+    <string name="EditSubjectAlertDialog">Editar assunto</string>
+    <string name="DeleteSubjectADMensage">Você deseja, realmente, excluir esse assunto e todas as fotos nele armazenadas?</string>
+    <string name="DeleteSubject">Assunto excluido.</string>
+    <string name="DeleteSubjectFail">Esse assunto não pode ser deletado.</string>
+
+    //Photo
+    <string name="Image">Imagem</string>
+    <string name="DeletePhotoADMensage">Você realmente deseja deletar essa foto?</string>
+
+    //Permissions
+    <string name="Allow_access">Permitir acesso</string>
+    <string name="Allow_access_mensage">   Por favor, garanta acesso para que o NoteBook Cam crie e leia pastas em seu Cartão SD.</string>
+
+    //Photo editor
+    <string name="Save">Salvar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="photoEditorContrast">Contraste</string>
+    <string name="photoEditorBrightness">Brilho</string>
+    <string name="PhotoEditor">Editor de fotos</string>
+    <string name="PhotoEditorPath">Editado</string>
+    <string name="PhotoEditorRed">Vermelho</string>
+    <string name="PhotoEditorBlue">Azul</string>
+    <string name="PhotoEditorGreen">Verde</string>
+    <string name="PhotoEditorWannaEditMessage">Você deseja editar a foto?</string>
+    <string name="PhotoEditorSaveMessage">Voce que sair sem salvar a iamgem?</string>
+    <string name="PhotoEditorDiscard">Descartar</string>
+    <string name="savingMensage">Salvando...</string>
+    <string name="PhotoEditorCut">Cortar</string>
+    <string name="PhotoEditorCancel">Cancelar</string>
+    <string name="savingSucessMensage">Image salva com sucesso em</string>
+    <string name="savingFailMensage">Erro ao salvar a imagem</string>
+    <string name="PhotoEditorApplying">Aplicando...</string>
+    <string name="PhotoEditorFilterGRAY">Escala de cinza</string>
+    <string name="PhotoEditorFilterRELIEF">Relief</string>
+    <string name="PhotoEditorFilterNEON">Neon</string>
+    <string name="PhotoEditorFilterAVERAGE_BLUR">Disgoque médio</string>
+    <string name="PhotoEditorFilterPIXELATE">Pixelate</string>
+    <string name="PhotoEditorFilterTV">Televisão</string>
+    <string name="PhotoEditorFilterINVERT">Inverter</string>
+    <string name="PhotoEditorFilterBLOCK">Block</string>
+    <string name="PhotoEditorFilterOLD">Antigo</string>
+    <string name="PhotoEditorFilterLIGHT">Luz</string>
+    <string name="PhotoEditorFilterLOMO">Lomo</string>
+    <string name="PhotoEditorFilterHDR">HDR</string>
+    <string name="PhotoEditorFilterSOFT_GLOW">Brilho suave</string>
+    <string name="PhotoEditorFilterSKETCH">Rascunho</string>
+    <string name="PhotoEditorFilterGAUSSIANBLUR">Desfoque Gaussiano</string>
+    <string name="PhotoEditorFilterGOTHAM">Gotham</string>
+    <string name="PhotoEditorFilterNone">Original</string>
+    <string name="PhotoEditorUndoMessage">Você tem certeza que deseja voltar à imagem original?</string>
+    <string name="PhotoEditorUndoMessagePositive">Sim</string>
+</resources>

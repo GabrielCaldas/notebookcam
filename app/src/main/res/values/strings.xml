@@ -1,0 +1,104 @@
+<resources>
+
+    //General
+    <string name="app_name">NoteBook Cam</string>
+    <string name="Cancel">Cancel</string>
+    <string name="No">No</string>
+    <string name="developed_by">Developed by Infinity Co.</string>
+    <string name="Edit">Edit</string>
+    <string name="Create">Create</string>
+    <string name="Ok">Ok</string>
+    <string name="Delete">Delete</string>
+    <string name="DeleteADTittle">Are you sure about it?</string>
+    <string name="WelcomeTittle">Welcome!</string>
+    <string name="WelcomeMensage">\n  Welcome to the NoteBookCam. \n \n This version comes with new flat layout and now you can edit a photo right after take a shot.</string>
+    <string name="WelcomeTip">Take a tip! To see the photos in high quality open it in your computer.</string>
+    <string name="Loading">Loading.</string>
+    <string name="Saving">Saving photo. Please wait.</string>
+    <string name="Youtube">https://www.youtube.com/watch?v=I7FF5Kp9lNs</string>
+
+    //Menu
+    <string name="Settings">Settings</string>
+    <string name="Tutorial">Tutorial</string>
+    <string name="Descovery">Discovery</string>
+    <string name="Menu">Menu</string>
+    <string name="ReloadUIMensage">Applying changes.</string>
+
+    //Option
+    <string name="Font">Font style</string>
+    <string name="AppColor">App Color</string>
+
+    //Folders
+    <string name="NoFoldersMensage">You dont have anyone folder. Please create one.</string>
+    <string name="NewFolderCreated">Now you have a new folder.</string>
+    <string name="NewFolderFail">Notebook Cam cant create a new folder.</string>
+    <string name="FolderAllredyExist">Choose other name to your folder.</string>
+    <string name="NewFolderAlertDialog">New folder</string>
+    <string name="EditFolderAlertDialog">Edit folder</string>
+    <string name="NewFolderAlertDialogHint">Folder`s name</string>
+    <string name="NewFolderSelectColor">Choose a color.</string>
+    <string name="DeleteFolderADMensage">Do you really wanna delete this folder and all yours subjects and photos?</string>
+    <string name="DeleteFolder">Folder has been deleted.</string>
+    <string name="DeleteFolderFail">This folder can not be deleted.</string>
+
+    //Subject
+    <string name="NoSubjectsMensage">You dont have anyone subject. Please take a picture to create a new class folders.</string>
+    <string name="NewSubjectCreated">Now you have a new subject.</string>
+    <string name="NewSubjectFail">Notebook Cam cant create a new subject.</string>
+    <string name="SubjectAllredyExist">Choose other name to your subject.</string>
+    <string name="NewSubjectAlertDialog">New subject</string>
+    <string name="NewSubjectAlertDialogHint">Subject`s name</string>
+    <string name="EditSubjectAlertDialog">Edit subject</string>
+    <string name="DeleteSubjectADMensage">Do you really wanna delete this subject and all yours  photos?</string>
+    <string name="DeleteSubject">Subject has been deleted.</string>
+    <string name="DeleteSubjectFail">This subject can not be deleted.</string>
+
+    //Photo
+    <string name="Image">Image</string>
+    <string name="DeletePhotoADMensage">Do you really wanna delete this photo?</string>
+
+    //Permissions
+    <string name="Allow_access">Allow access</string>
+    <string name="Allow_access_mensage">   Please allow NoteBook Cam create and read folders on your SDcard.</string>
+
+
+    //PhotoEditor
+    <string name="Save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="photoEditorContrast">Contrast</string>
+    <string name="photoEditorBrightness">Brightness</string>
+    <string name="PhotoEditor">Photo editor</string>
+    <string name="PhotoEditorPath">Edited</string>
+    <string name="PhotoEditorRed">Red</string>
+    <string name="PhotoEditorBlue">Blue</string>
+    <string name="PhotoEditorGreen">Green</string>
+    <string name="PhotoEditorWannaEditMessage">Do you want to edit the photo?</string>
+    <string name="PhotoEditorSaveMessage">Are you want to exit without saving image?</string>
+    <string name="PhotoEditorDiscard">Discard</string>
+    <string name="savingMensage">Saving...</string>
+    <string name="PhotoEditorCut">Cut</string>
+    <string name="PhotoEditorCancel">Cancel</string>
+    <string name="savingSucessMensage">Image Saved Successfully on</string>
+    <string name="savingFailMensage">Failed to save Image</string>
+    <string name="PhotoEditorApplying">Applying...</string>
+    <string name="PhotoEditorFilterGRAY">Gray scale</string>
+    <string name="PhotoEditorFilterRELIEF">Relief</string>
+    <string name="PhotoEditorFilterNEON">Neon</string>
+    <string name="PhotoEditorFilterAVERAGE_BLUR">Avarage blur</string>
+    <string name="PhotoEditorFilterPIXELATE">Pixelate</string>
+    <string name="PhotoEditorFilterTV">TV</string>
+    <string name="PhotoEditorFilterINVERT">Invert</string>
+    <string name="PhotoEditorFilterBLOCK">Block</string>
+    <string name="PhotoEditorFilterOLD">Old</string>
+    <string name="PhotoEditorFilterLIGHT">Light</string>
+    <string name="PhotoEditorFilterLOMO">Lomo</string>
+    <string name="PhotoEditorFilterHDR">HDR</string>
+    <string name="PhotoEditorFilterSOFT_GLOW">Soft glow</string>
+    <string name="PhotoEditorFilterGAUSSIANBLUR">Gaussian blur</string>
+    <string name="PhotoEditorFilterSKETCH">Sketch</string>
+    <string name="PhotoEditorFilterGOTHAM">Gotham</string>
+    <string name="PhotoEditorFilterNone">None</string>
+    <string name="PhotoEditorUndoMessage">Do you really want undo all your changes?</string>
+    <string name="PhotoEditorUndoMessagePositive">Yes</string>
+
+</resources>

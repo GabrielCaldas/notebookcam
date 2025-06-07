@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:id="@+id/rlEditorButtons"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#62000000"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical|left"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_alignParentStart="true"
+                android:layout_width="30dp"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:background="@drawable/btback_white"/>
+
+                <Button
+                    android:id="@+id/btEditorBack"
+                    android:layout_width="40dp"
+                    android:layout_height="50dp"
+                    android:background="#00000000" />
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btEditorBackText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:text="@string/PhotoEditor"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.infinityco.notebookcam.Helpers.PhotoEditor.Cropper.CropImageView
+            android:id="@+id/ivEditorCut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="55dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivEditor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="55dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside" />
+
+
+
+
+        <LinearLayout
+            android:id="@+id/llPhotoEditorBotton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#393939"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="11dp">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_save" />
+
+                    <Button
+                        android:id="@+id/imgSave"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#00000000" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="61dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_undo" />
+
+                    <Button
+                        android:id="@+id/imgUndo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#00000000" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginLeft="11dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/slider_icon" />
+
+                    <Button
+                        android:id="@+id/btEditSliders"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#00000000" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginLeft="61dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/cut_icon" />
+
+                    <Button
+                        android:id="@+id/btEditorCut"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#00000000" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginLeft="111dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/colors_icon" />
+
+                    <Button
+                        android:id="@+id/btEditorColors"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#00000000" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginLeft="161dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/filter_icon" />
+
+                    <Button
+                        android:id="@+id/btEditorFilters"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="#00000000" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llSliders"
+            android:layout_above="@+id/llPhotoEditorBotton"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="1dp"
+                card_view:cardCornerRadius="6dp">
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtBrightness"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/photoEditorBrightness"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+                        <TextView
+                            android:id="@+id/txtBrightnessValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_alignParentEnd="true"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                    </RelativeLayout>
+
+                    <SeekBar
+                        android:id="@+id/sbBrightness"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:progress="100"
+                        android:max="200"
+                        android:min="0"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtBrightness" />
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtContrast"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/photoEditorContrast"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                        <TextView
+                            android:id="@+id/txtContrastValue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_alignParentEnd="true"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                    </RelativeLayout>
+
+                    <SeekBar
+                        android:id="@+id/sbContrast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:progress="255"
+                        android:max="500"
+                        android:min="0"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtContrast" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="17dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/editor_dialog_pointer" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llCut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/llPhotoEditorBotton"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardElevation="1dp"
+                card_view:cardCornerRadius="6dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_alignParentStart="true">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_width="82dp"
+                            android:layout_height="40dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="@string/PhotoEditorCut"/>
+
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btEditorCutCut"
+                            android:layout_width="82dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/box_layout2" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_alignParentStart="true">
+
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_width="82dp"
+                            android:layout_height="40dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:gravity="center"
+                                android:text="@string/PhotoEditorCancel"/>
+
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btEditorCutCancel"
+                            android:layout_width="82dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/box_layout2" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="17dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="64dp"
+                android:background="@drawable/editor_dialog_pointer" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llColors"
+            android:layout_above="@+id/llPhotoEditorBotton"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="1dp"
+                card_view:cardCornerRadius="6dp">
+
+                <LinearLayout
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/PhotoEditorRed"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+
+                    </RelativeLayout>
+
+                    <SeekBar
+                        android:id="@+id/sbRed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:progress="100"
+                        android:max="200"
+                        android:min="0"
+                        android:progressDrawable="@drawable/red_custom_seekbar"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtBrightness" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/PhotoEditorGreen"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+
+                    </RelativeLayout>
+
+                    <SeekBar
+                        android:id="@+id/sbGreen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:progress="100"
+                        android:max="200"
+                        android:min="0"
+                        android:progressDrawable="@drawable/green_custom_seekbar"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtBrightness" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/PhotoEditorBlue"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+
+                    </RelativeLayout>
+
+                    <SeekBar
+                        android:id="@+id/sbBlue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:progress="100"
+                        android:max="200"
+                        android:min="0"
+                        android:progressDrawable="@drawable/blue_custom_seekbar"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtBrightness" />
+
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="17dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="114.5dp"
+                android:background="@drawable/editor_dialog_pointer" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llFilters"
+            android:layout_above="@+id/llPhotoEditorBotton"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="1dp"
+                card_view:cardCornerRadius="6dp">
+
+                <LinearLayout
+                    android:layout_marginRight="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/llFIlterBar"
+                        android:visibility="gone"
+                        android:gravity="left"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginLeft="3dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvFilterName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <SeekBar
+                            android:max="100"
+                            android:id="@+id/sbFilter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"/>
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvFilters"
+                        android:background="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="17dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="164.5dp"
+                android:background="@drawable/editor_dialog_pointer" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llFIlterBarNeon"
+            android:visibility="gone"
+            android:layout_above="@+id/llPhotoEditorBotton"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="1dp"
+                card_view:cardCornerRadius="6dp">
+
+                <LinearLayout
+                    android:gravity="left"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/PhotoEditorFilterNEON"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <RelativeLayout
+                            android:layout_alignParentEnd="true"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/ic_close" />
+
+                            <Button
+                                android:id="@+id/btEditorFiltersNeonClose"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:background="#00000000" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <SeekBar
+                        android:id="@+id/sbRedNeon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:progress="100"
+                        android:max="200"
+                        android:min="0"
+                        android:progressDrawable="@drawable/red_custom_seekbar"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtBrightness" />
+
+                    <SeekBar
+                        android:id="@+id/sbGreenNeon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:progress="100"
+                        android:max="200"
+                        android:min="0"
+                        android:progressDrawable="@drawable/green_custom_seekbar"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtBrightness" />
+
+                    <SeekBar
+                        android:id="@+id/sbBlueNeon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:progress="100"
+                        android:max="200"
+                        android:min="0"
+                        android:progressDrawable="@drawable/blue_custom_seekbar"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtBrightness" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="17dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="164.5dp"
+                android:background="@drawable/editor_dialog_pointer" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
